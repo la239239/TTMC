@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="547.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <!-- Image de fond -->
+      <ImageView fitHeight="552.0" fitWidth="879.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/background.png" />
+         </image>
+      </ImageView>
+      
+      <!-- Définition d'un tableau pour générer dynamiquement les images -->
+      <fx:define>
+         <Array fx:id="tiles">
+            <!-- Chaque ligne représente une position (x, y) et un type d'image -->
+            <Object[]>{195, 87, "ananas"}</Object[]>
+            <Object[]>{634, 346, "pants"}</Object[]>
+            <Object[]>{195, 187, "sponge"}</Object[]>
+            <Object[]>{268, 345, "ananas"}</Object[]>
+            <Object[]>{195, 447, "ananas"}</Object[]>
+            <Object[]>{487, 447, "ananas"}</Object[]>
+            <Object[]>{633, 83, "ananas"}</Object[]>
+            <Object[]>{559, 32, "ananas"}</Object[]>
+         </Array>
+      </fx:define>
+      
+      <!-- Génération dynamique des ImageView -->
+      <fx:repeat items="${tiles}" var="tile">
+         <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="${tile[0]}" layoutY="${tile[1]}" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../ressources/${tile[2]}.png" />
+            </image>
+         </ImageView>
+      </fx:repeat>
+      
+   </children>
+</AnchorPane>
