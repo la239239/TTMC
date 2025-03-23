@@ -21,7 +21,7 @@
       </Text>
       <ImageView fitHeight="218.0" fitWidth="176.0" layoutX="97.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../ressources/Sponge_Sad.png" />
+            <Image url="@../ressources/pearl.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="327.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">

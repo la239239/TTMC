@@ -18,9 +18,9 @@
             <Font name="Algerian" size="36.0" />
          </font>
       </Text>
-      <ImageView fitHeight="203.0" fitWidth="209.0" layoutX="280.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="283.0" fitWidth="284.0" layoutX="240.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../ressources/Sponge_hangry.png" />
+            <Image url="@../ressources/plankton.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="68.0" fitWidth="142.0" layoutX="14.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
