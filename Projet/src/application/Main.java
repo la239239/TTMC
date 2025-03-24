@@ -23,6 +23,7 @@ public class Main extends Application {
 			    System.err.println("Error loading FXML or CSS file: " + e.getMessage());
 			    e.printStackTrace();
 			}
+		System.out.println("test antoine");
 	}
     
 
