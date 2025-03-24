@@ -7,7 +7,11 @@
 
 <AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="414.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
+<<<<<<< HEAD
       <ImageView fitHeight="472.0" fitWidth="736.0" pickOnBounds="true" preserveRatio="true">
+=======
+      <ImageView fitHeight="463.0" fitWidth="736.0" pickOnBounds="true" preserveRatio="true">
+>>>>>>> 1ee6e4e2efad2e1fe8d526e835a345b182ca02e9
          <image>
             <Image url="@../ressources/background.png" />
          </image>

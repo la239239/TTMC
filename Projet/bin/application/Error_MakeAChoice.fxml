@@ -15,7 +15,7 @@
       </ImageView>
       <Text layoutX="235.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MAKE A CHOICE !">
          <font>
-            <Font name="Algerian" size="36.0" />
+            <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
       <ImageView fitHeight="68.0" fitWidth="142.0" layoutX="14.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">

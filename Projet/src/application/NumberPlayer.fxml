@@ -17,7 +17,7 @@
       </ImageView>
       <Text layoutX="143.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose number of player">
          <font>
-            <Font name="Algerian" size="36.0" />
+            <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
       <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">

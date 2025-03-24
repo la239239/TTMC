@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-22">
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-22">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
 	<classpathentry kind="lib" path="C:/Users/antla/TTMC/javafx-sdk-23.0.2/lib/javafx.base.jar"/>
@@ -16,5 +17,17 @@
 	<classpathentry kind="lib" path="C:/Users/antla/TTMC/javafx-sdk-23.0.2/lib/javafx.swing.jar"/>
 	<classpathentry kind="lib" path="C:/Users/antla/TTMC/javafx-sdk-23.0.2/lib/javafx.web.jar"/>
 	<classpathentry kind="lib" path="C:/Users/antla/TTMC/javafx-sdk-23.0.2/lib/javafx-swt.jar"/>
+=======
+	<classpathentry exported="true" kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx.base.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx.controls.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx.fxml.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx.graphics.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx.media.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx.swing.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx.web.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/lcrql/OneDrive/Desktop/TTMC/javafx-sdk-23.0.2/lib/javafx-swt.jar"/>
+>>>>>>> 1ee6e4e2efad2e1fe8d526e835a345b182ca02e9
 	<classpathentry kind="output" path="bin"/>
 </classpath>
