@@ -7,12 +7,12 @@
 
 <AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="414.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <ImageView pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="472.0" fitWidth="736.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../ressources/background.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="151.0" fitWidth="152.0" layoutX="568.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="151.0" fitWidth="152.0" layoutX="568.0" layoutY="328.0" onMouseClicked="#OpenCredits" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../ressources/credits.png" />
          </image>
@@ -20,7 +20,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="85.0" fitWidth="200.0" layoutX="280.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="85.0" fitWidth="200.0" layoutX="280.0" layoutY="207.0" onMouseClicked="#OpenNumberOfPlayers" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../ressources/start.png" />
          </image>
@@ -38,7 +38,7 @@
             <Image url="@../ressources/logoTTMC.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="112.0" fitWidth="167.0" layoutX="14.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="112.0" fitWidth="167.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#OpenRules" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../ressources/Question.png" />
          </image>
@@ -46,10 +46,13 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fitHeight="62.0" fitWidth="140.0" layoutX="14.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="62.0" fitWidth="140.0" layoutX="14.0" layoutY="333.0" onMouseClicked="#OpenExit" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../ressources/exit.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
    </children>
 </AnchorPane>
