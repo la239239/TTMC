@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="414.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="432.0" fitWidth="768.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/background.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="143.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose number of player">
+         <font>
+            <Font name="Algerian" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/back.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <RadioButton layoutX="143.0" layoutY="225.0" mnemonicParsing="false" text="2">
+         <font>
+            <Font name="Barlow Condensed Regular" size="35.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="272.0" layoutY="225.0" mnemonicParsing="false" text="3">
+         <font>
+            <Font name="Barlow Condensed Regular" size="35.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="403.0" layoutY="225.0" mnemonicParsing="false" text="4">
+         <font>
+            <Font name="Barlow Condensed Regular" size="35.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="527.0" layoutY="225.0" mnemonicParsing="false" text="5">
+         <font>
+            <Font name="Barlow Condensed Regular" size="35.0" />
+         </font>
+      </RadioButton>
+      <ImageView fitHeight="92.0" fitWidth="88.0" layoutX="334.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/next.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
