@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+C:\Users\lcrql\OneDrive\Desktop\TTMC\.metadata\.plugins\org.eclipse.jdt.core
-2674025601.index
-1865797976.index
