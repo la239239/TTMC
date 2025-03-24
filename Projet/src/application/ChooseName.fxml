@@ -17,7 +17,7 @@
       </ImageView>
       <Text layoutX="193.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What is your name ?">
          <font>
-            <Font name="Algerian" size="36.0" />
+            <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
       <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">

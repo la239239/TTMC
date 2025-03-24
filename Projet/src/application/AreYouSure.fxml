@@ -14,9 +14,9 @@
             <Image url="@../ressources/error.png" />
          </image>
       </ImageView>
-      <Text layoutX="257.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure ?">
+      <Text layoutX="266.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Are you sure ?">
          <font>
-            <Font name="Algerian" size="36.0" />
+            <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
       <ImageView fitHeight="218.0" fitWidth="176.0" layoutX="97.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">

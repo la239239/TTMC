@@ -13,9 +13,9 @@
             <Image url="@../ressources/error.png" />
          </image>
       </ImageView>
-      <Text layoutX="197.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="player have name !">
+      <Text layoutX="197.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player have name !">
          <font>
-            <Font name="Algerian" size="36.0" />
+            <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
       <ImageView fitHeight="283.0" fitWidth="284.0" layoutX="240.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
