@@ -1,0 +1,30 @@
+A faire qu'une fois
+	1.	créer un dossier local de votre pc appelé "TTMC"
+	2.	cette commande dans le cmd dans TTMC: 
+	git clone https://github.com/la239239/TTMC.git
+
+comment se mettre a jour?
+	1. la première fois : git pull --rebase origin master
+	2. les autres fois : git pull
+
+
+comment ajouter des modifs ?
+	Toujours se mettre dans le repertoire TTMC (dans le cmd)
+	etape 1 : afficher les modifs (les modifs seront en rouge)
+	git status
+
+	etape 2: ajouter tous les modifs
+	git add .
+
+	etape 3 : vérifier que c'est enregistrer (normalement en vert)
+	git status
+
+	etape 4 : ajouter un commentaire (obligatoire SVP)
+	git commit -m "blablabla"
+
+	etape 5 : envoyer sur le site GitHub
+		1. la première fois : git push --set-upstream origin master
+		2.git push
+
+	etape 6 : vérifier sur GitHub
+	juste actualiser le site
