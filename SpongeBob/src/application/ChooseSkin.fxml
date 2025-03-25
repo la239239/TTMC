@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="369.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="443.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <ImageView fitHeight="443.0" fitWidth="784.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -23,7 +21,7 @@
       </Text>
 
       <!-- MrKrabs Image acting as RadioButton -->
-      <ImageView fx:id="MrKrabsImage" fitHeight="150.0" fitWidth="145.0" layoutX="509.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#selectMrKrabs">
+      <ImageView fx:id="MrKrabsImage" fitHeight="150.0" fitWidth="145.0" layoutX="509.0" layoutY="180.0" onMouseClicked="#selectMrKrabs" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/MrKrabs.png" />
          </image>
@@ -33,7 +31,7 @@
       </ImageView>
 
       <!-- Sandy Image acting as RadioButton -->
-      <ImageView fx:id="SandyImage" fitHeight="150.0" fitWidth="113.0" layoutX="303.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#selectSandy">
+      <ImageView fx:id="SandyImage" fitHeight="150.0" fitWidth="113.0" layoutX="303.0" layoutY="119.0" onMouseClicked="#selectSandy" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/Sandy.png" />
          </image>
@@ -43,7 +41,7 @@
       </ImageView>
 
       <!-- Squidward Image acting as RadioButton -->
-      <ImageView fx:id="SquidwardImage" fitHeight="141.0" fitWidth="62.0" layoutX="241.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#selectSquidward">
+      <ImageView fx:id="SquidwardImage" fitHeight="141.0" fitWidth="62.0" layoutX="241.0" layoutY="147.0" onMouseClicked="#selectSquidward" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/Squidward.png" />
          </image>
@@ -53,7 +51,7 @@
       </ImageView>
 
       <!-- Spongebob Image acting as RadioButton -->
-      <ImageView fx:id="SpongebobImage" fitHeight="128.0" fitWidth="149.0" layoutX="92.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#selectSpongebob">
+      <ImageView fx:id="SpongebobImage" fitHeight="128.0" fitWidth="149.0" layoutX="92.0" layoutY="207.0" onMouseClicked="#selectSpongebob" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/Spongebob.png" />
          </image>
@@ -63,7 +61,7 @@
       </ImageView>
 
       <!-- Patrick Image acting as RadioButton -->
-      <ImageView fx:id="PatrickImage" fitHeight="141.0" fitWidth="109.0" layoutX="414.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#selectPatrick">
+      <ImageView fx:id="PatrickImage" fitHeight="141.0" fitWidth="109.0" layoutX="414.0" layoutY="154.0" onMouseClicked="#selectPatrick" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/Patrick.png" />
          </image>

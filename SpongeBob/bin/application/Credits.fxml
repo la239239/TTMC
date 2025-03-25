@@ -7,9 +7,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="414.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="414.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
-      <ImageView fitHeight="483.0" fitWidth="744.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="476.0" fitWidth="758.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/background.png" />
          </image>
@@ -24,7 +24,7 @@
             <Image url="@../../resource/image/friends_credits.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="395.0" onMouseClicked="#BackHome" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/back.png" />
          </image>

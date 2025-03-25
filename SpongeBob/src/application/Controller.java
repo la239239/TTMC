@@ -7,125 +7,110 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.ButtonType;
-import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
-
-import java.awt.TextField;
+import javafx.scene.input.MouseEvent;
 import java.io.IOException;
+import java.net.URL;
 
 public class Controller {
-//	home.fxml
-    @FXML
-    private void OpenNumberOfPlayers(MouseEvent event) {
+
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
+    private void switchScene(MouseEvent event, String fxmlFile) {
         try {
-            // Load the Number of Players FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/numberplayer.fxml"));
-            Stage stage = new Stage();
-            stage.setScene(new Scene(loader.load()));
-            stage.setTitle("Number of Players");
+            URL fxmlLocation = getClass().getResource(fxmlFile);
+            if (fxmlLocation == null) {
+                throw new IOException("Fichier FXML non trouvé : " + fxmlFile);
+            }
+            root = FXMLLoader.load(fxmlLocation);
+            stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+            scene = new Scene(root);
+            stage.setScene(scene);
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
+            showErrorDialog("Erreur de chargement", "Impossible de charger la scène : " + fxmlFile);
         }
+    }
+
+    private void showErrorDialog(String title, String message) {
+        Alert alert = new Alert(AlertType.ERROR);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
+
+    @FXML
+    private void BackHome(MouseEvent event) {
+        switchScene(event, "Home.fxml");
     }
 
     @FXML
     private void OpenCredits(MouseEvent event) {
-        try {
-            // Load the Credits FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/credits.fxml"));
-            Stage stage = new Stage();
-            stage.setScene(new Scene(loader.load()));
-            stage.setTitle("Credits");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        switchScene(event, "Credits.fxml");
     }
 
     @FXML
     private void OpenRules(MouseEvent event) {
-        try {
-            // Load the Rules FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/rules.fxml"));
-            Stage stage = new Stage();
-            stage.setScene(new Scene(loader.load()));
-            stage.setTitle("Rules");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        switchScene(event, "Rules.fxml");
     }
 
     @FXML
     private void OpenExit(MouseEvent event) {
-        try {
-            // Load the Are You Sure FXML file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/areyousure.fxml")); 
-            Stage stage = new Stage(); 
-            stage.setScene(new Scene(loader.load()));
-            stage.setTitle("Exit Confirmation");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace(); 
-        }
+        switchScene(event, "AreYouSure.fxml");
     }
-
-//    AreYouSure.fxml
-    @FXML
-    private void BackHome(MouseEvent event) {
-        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        currentStage.close(); 
-
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/home.fxml")); // Home screen FXML path
-            Parent root = loader.load();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.setTitle("Home");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
+    
     @FXML
     private void Exit(MouseEvent event) {
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        currentStage.close(); 
-        System.exit(0); 
-    }
-    
-//   NumberPlayer.fxml 
-    @FXML
-    private TextField playerNameTextField;
-
-    // Other FXML elements can be added here
-
-    @FXML
-    private void initialize() {
-        // Code to initialize any UI elements
+        currentStage.close();
     }
 
-    // Example method for handling a button click or other event
     @FXML
-    private void handleStartButtonClick() {
-        String playerName = playerNameTextField.getText();
-        System.out.println("Player Name: " + playerName);
-        // Your logic to handle the name input, for example, starting the game
+    private void OpenChooseSkin(MouseEvent event) {
+        switchScene(event, "ChooseSkin.fxml");
+    }
+
+    @FXML
+    private void OpenNumberOfPlayers(MouseEvent event) {
+        switchScene(event, "NumberOfPlayers.fxml");
     }
     
     @FXML
-    private void OpenChooseName(MouseEvent event) {
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/choosename.fxml"));
-            Stage stage = new Stage();
-            stage.setScene(new Scene(loader.load()));
-            stage.setTitle("Name");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    private void OpenBoardGame(MouseEvent event) {
+        switchScene(event, "BoardGame.fxml");
+    }
+    
+    @FXML
+    private void OpenName(MouseEvent event) {
+    	switchScene(event, "ChooseName.fxml");
+    }
+
+    @FXML
+    private void selectMrKrabs(MouseEvent event) {
+        System.out.println("Mr. Krabs selected!");
+    }
+
+    @FXML
+    private void selectSandy(MouseEvent event) {
+        System.out.println("Sandy selected!");
+    }
+
+    @FXML
+    private void selectSquidward(MouseEvent event) {
+        System.out.println("Squidward selected!");
+    }
+
+    @FXML
+    private void selectSpongebob(MouseEvent event) {
+        System.out.println("Spongebob selected!");
+    }
+
+    @FXML
+    private void selectPatrick(MouseEvent event) {
+        System.out.println("Patrick selected!");
     }
 }
