@@ -50,17 +50,17 @@ public class Controller {
 
     @FXML
     private void OpenCredits(MouseEvent event) {
-        switchScene(event, "Credits.fxml");
+        switchScene(event, "/view/Credits.fxml");
     }
 
     @FXML
     private void OpenRules(MouseEvent event) {
-        switchScene(event, "Rules.fxml");
+        switchScene(event, "/view/Rules.fxml");
     }
 
     @FXML
     private void OpenExit(MouseEvent event) {
-        switchScene(event, "AreYouSure.fxml");
+        switchScene(event, "/view/AreYouSure.fxml");
     }
     
     @FXML
@@ -71,22 +71,22 @@ public class Controller {
 
     @FXML
     private void OpenChooseSkin(MouseEvent event) {
-        switchScene(event, "ChooseSkin.fxml");
+        switchScene(event, "/view/ChooseSkin.fxml");
     }
 
     @FXML
     private void OpenNumberOfPlayers(MouseEvent event) {
-        switchScene(event, "NumberOfPlayers.fxml");
+        switchScene(event, "/view/NumberOfPlayers.fxml");
     }
     
     @FXML
     private void OpenBoardGame(MouseEvent event) {
-        switchScene(event, "BoardGame.fxml");
+        switchScene(event, "/view/BoardGame.fxml");
     }
     
     @FXML
     private void OpenName(MouseEvent event) {
-    	switchScene(event, "ChooseName.fxml");
+    	switchScene(event, "/view/ChooseName.fxml");
     }
 
     @FXML
