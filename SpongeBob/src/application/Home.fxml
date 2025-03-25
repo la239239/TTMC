@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="461.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="777.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/background.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="151.0" fitWidth="152.0" layoutX="575.0" layoutY="389.0" onMouseClicked="#OpenCredits" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/credits.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+      <ImageView fitHeight="85.0" fitWidth="200.0" layoutX="280.0" layoutY="207.0" onMouseClicked="#OpenNumberOfPlayers" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/start.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+      <ImageView fitHeight="62.0" fitWidth="119.0" layoutX="608.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/SpongeBob_logo.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="145.0" fitWidth="222.0" layoutX="277.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/logoTTMC.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="112.0" fitWidth="167.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#OpenRules" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/Question.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+      <ImageView fitHeight="62.0" fitWidth="140.0" layoutX="14.0" layoutY="389.0" onMouseClicked="#OpenExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/exit.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>
