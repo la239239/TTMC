@@ -7,8 +7,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="369.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
- <children>
+<AnchorPane prefHeight="369.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AreYouSureController">
+   <children>
       <ImageView fitHeight="443.0" fitWidth="784.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/error.png" />
@@ -19,12 +19,7 @@
             <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
-      <ImageView fitHeight="218.0" fitWidth="176.0" layoutX="97.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/pearl.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="327.0" layoutY="124.0" onMouseClicked="#BackHome" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="327.0" layoutY="124.0" onMouseClicked="#GoBack" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/no.png" />
          </image>
@@ -39,6 +34,11 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
+      </ImageView>
+      <ImageView fitHeight="302.0" fitWidth="302.0" layoutX="32.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/pearl.png" />
+         </image>
       </ImageView>
    </children>
 </AnchorPane>

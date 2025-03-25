@@ -1,0 +1,4 @@
+1. exception 
+2. goback de areyousure : quand c est home avant il faut ouvrir home
+3. chooseskin faut que next soit gris puis vert ou erreur ou autre
+4. gestions des cartes, joueurs
