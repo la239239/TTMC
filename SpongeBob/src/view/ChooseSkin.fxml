@@ -75,9 +75,20 @@
          </cursor>
       </ImageView>
 
-      <!-- Next Button to continue -->
-      <ImageView fx:id="nextButton" fitHeight="107.0" fitWidth="120.0" layoutX="304.0" layoutY="306.0" 
-                 onMouseClicked="#goToBoardGame" pickOnBounds="true" preserveRatio="true" disable="true">
+      <!-- Bouton Next désactivé -->
+      <ImageView fx:id="nextDisabledImage" fitHeight="107.0" fitWidth="120.0" layoutX="304.0" layoutY="306.0" 
+                 onMouseClicked="#goToBoardGame" pickOnBounds="true" preserveRatio="true" visible="true">
+         <image>
+            <Image url="@../../resource/image/nextGrey.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+      <!-- Bouton Next activé -->
+      <ImageView fx:id="nextEnabledImage" fitHeight="107.0" fitWidth="120.0" layoutX="304.0" layoutY="306.0" 
+                 onMouseClicked="#goToBoardGame" pickOnBounds="true" preserveRatio="true" visible="false">
          <image>
             <Image url="@../../resource/image/next.png" />
          </image>
