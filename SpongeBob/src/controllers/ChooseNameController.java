@@ -22,52 +22,48 @@ public class ChooseNameController {
     private static Set<String> existingNames = new HashSet<>();
 
     @FXML
-    private void BackPlayerName(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "/view/ChooseName.fxml");
+    private void handleBackButton(MouseEvent event) {
+        SceneSwitcher.switchScene(event, "/view/NumberOfPlayers.fxml"); // Adaptez ce chemin
     }
     
     @FXML
     private void initialize() {
-        // Initialize the Next buttons: initially show the greyed-out image
-        nextEnabledImage.setVisible(false);
-        nextGreyImage.setVisible(true);
-
-        // Add listener for player name field to toggle the visibility of the Next button
-        playerNameField.textProperty().addListener((observable, oldValue, newValue) -> {
-            String playerName = playerNameField.getText().trim();
-            if (playerName.isEmpty()) {
-                nextGreyImage.setVisible(true);
-                nextEnabledImage.setVisible(false);
-            } else {
-                nextGreyImage.setVisible(false);
-                nextEnabledImage.setVisible(true);
-            }
+        // Configuration initiale
+        updateButtonState();
+        
+        // Écouteur des changements de texte
+        playerNameField.textProperty().addListener((obs, oldVal, newVal) -> {
+            updateButtonState();
         });
     }
 
-    @FXML
-    private void validateName(MouseEvent event) {
-        String playerName = playerNameField.getText().trim();
-
-        if (playerName.isEmpty()) {
-            // Open Error_AddName scene if the name field is empty
-            openErrorScene("/view/Error_AddName.fxml");
-            return;
-        }
-        
-        if (existingNames.contains(playerName)) {
-            // Open Error_DoubleName scene if the name already exists
-            openErrorScene("/view/Error_DoubleName.fxml");
-            return;
-        }
-
-        // If validation passes, add the name to the set and proceed to next scene
-        existingNames.add(playerName);
-        SceneSwitcher.switchScene(event, "/view/ChooseSkin.fxml");
+    private void updateButtonState() {
+        boolean nameIsEmpty = playerNameField.getText().trim().isEmpty();
+        nextGreyImage.setVisible(nameIsEmpty);
+        nextEnabledImage.setVisible(!nameIsEmpty);
     }
 
-    // Method to open an error scene
-    private void openErrorScene(String fxmlPath) {
-        SceneSwitcher.switchScene(null, fxmlPath); // Null event to indicate scene switch without passing any event
+    @FXML
+    private void handleEmptyName(MouseEvent event) {
+        // Ouvre l'erreur seulement si le champ est vide (double vérification)
+        if (playerNameField.getText().trim().isEmpty()) {
+            System.out.println("Opening Error_AddName scene...");
+            SceneSwitcher.switchScene(event, "/view/Error_AddName.fxml");
+        }
+    }
+
+    @FXML
+    private void handleValidName(MouseEvent event) {
+        String playerName = playerNameField.getText().trim();
+        
+        // Vérifie les doublons
+        if (existingNames.contains(playerName)) {
+            SceneSwitcher.switchScene(event, "/view/Error_DoubleName.fxml");
+            return;
+        }
+
+        // Ajoute le nom et change de scène
+        existingNames.add(playerName);
+        SceneSwitcher.switchScene(event, "/view/ChooseSkin.fxml");
     }
 }
