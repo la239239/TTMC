@@ -1,3 +1,9 @@
+Pour gabin :
+il y a des problèmes avec choosename
+je veux que quand il n y a pas de nom le next s affiche en gris et quand il y a un nom ca s affiche en vert
+si l utilisateur veut quand meme appuyer sur le gris alors ca ouvre error_addname
+
+
 1. exception 
 2. goback de areyousure : quand c est home avant il faut ouvrir home
 3. chooseskin faut que next soit gris puis vert ou erreur ou autre
