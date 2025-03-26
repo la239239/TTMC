@@ -25,7 +25,7 @@
         </Text>
 
         <!-- Back Button -->
-        <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="391.0" onMouseClicked="#OpenNumberOfPlayers" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="391.0" onMouseClicked="#handleBackButton" pickOnBounds="true" preserveRatio="true">
             <image>
                 <Image url="@../../resource/image/back.png" />
             </image>
@@ -34,8 +34,8 @@
             </cursor>
         </ImageView>
 
-        <!-- Active Next Button -->
-        <ImageView fx:id="nextEnabledImage" fitHeight="92.0" fitWidth="88.0" layoutX="316.0" layoutY="303.0" onMouseClicked="#validateName" pickOnBounds="true" preserveRatio="true">
+        <!-- Active Next Button (Green) -->
+        <ImageView fx:id="nextEnabledImage" fitHeight="92.0" fitWidth="88.0" layoutX="316.0" layoutY="303.0" onMouseClicked="#handleValidName" pickOnBounds="true" preserveRatio="true" visible="false">
             <image>
                 <Image url="@../../resource/image/next.png" />
             </image>
@@ -45,10 +45,13 @@
         </ImageView>
 
         <!-- Greyed Next Button -->
-        <ImageView fx:id="nextGreyImage" fitHeight="92.0" fitWidth="88.0" layoutX="316.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="nextGreyImage" fitHeight="92.0" fitWidth="88.0" layoutX="316.0" layoutY="303.0" onMouseClicked="#handleEmptyName" pickOnBounds="true" preserveRatio="true" visible="true">
             <image>
                 <Image url="@../../resource/image/nextGrey.png" />
             </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
         </ImageView>
 
         <!-- Player Name TextField -->
