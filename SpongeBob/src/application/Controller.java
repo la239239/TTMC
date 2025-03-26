@@ -34,7 +34,7 @@ public class Controller {
     private void OpenNumberOfPlayers(MouseEvent event) {
         SceneSwitcher.switchScene(event, "/view/NumberOfPlayers.fxml");
     }
-
+    
     @FXML
     private void OpenBoardGame(MouseEvent event) {
         SceneSwitcher.switchScene(event, "/view/BoardGame.fxml");

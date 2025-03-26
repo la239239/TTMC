@@ -8,56 +8,70 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
-<AnchorPane prefHeight="369.0" prefWidth="762.0"  xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
-<children>
-      <ImageView fitHeight="481.0" fitWidth="768.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/background.png" />
-         </image>
-      </ImageView>
-      <Text layoutX="163.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose number of player">
-         <font>
-            <Font name="Krabby Patty" size="36.0" />
-         </font>
-      </Text>
-      <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="409.0" onMouseClicked="#BackHome" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/back.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-      <RadioButton layoutX="143.0" layoutY="225.0" mnemonicParsing="false" text="2" textFill="#124ebc">
-         <font>
-            <Font name="WishfulWaves" size="35.0" />
-         </font>
-         <toggleGroup>
-            <ToggleGroup fx:id="radio" />
-         </toggleGroup>
-      </RadioButton>
-      <RadioButton layoutX="272.0" layoutY="225.0" mnemonicParsing="false" text="3" textFill="#124ebc" toggleGroup="$radio">
-         <font>
-            <Font name="WishfulWaves" size="35.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="403.0" layoutY="225.0" mnemonicParsing="false" text="4" textFill="#124ebc" toggleGroup="$radio">
-         <font>
-            <Font name="WishfulWaves" size="35.0" />
-         </font>
-      </RadioButton>
-      <RadioButton layoutX="527.0" layoutY="225.0" mnemonicParsing="false" text="5" textFill="#124ebc" toggleGroup="$radio">
-         <font>
-            <Font name="WishfulWaves" size="35.0" />
-         </font>
-      </RadioButton>
-      <ImageView fitHeight="92.0" fitWidth="88.0" layoutX="334.0" layoutY="303.0" onMouseClicked="#OpenName" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/next.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-   </children>
+<AnchorPane prefHeight="369.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.NumberOfPlayersController">
+    <children>
+        <ImageView fitHeight="481.0" fitWidth="768.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resource/image/background.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="163.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose number of player">
+            <font>
+                <Font name="Krabby Patty" size="36.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="57.0" fitWidth="133.0" layoutX="14.0" layoutY="409.0" onMouseClicked="#BackHome" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../resource/image/back.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+        
+        <!-- Radio buttons for number of players -->
+        <RadioButton fx:id="radio2" layoutX="143.0" layoutY="225.0" mnemonicParsing="false" text="2" textFill="#124ebc">
+            <font>
+                <Font name="WishfulWaves" size="35.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="playerCount" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="radio3" layoutX="272.0" layoutY="225.0" mnemonicParsing="false" text="3" textFill="#124ebc" toggleGroup="$playerCount">
+            <font>
+                <Font name="WishfulWaves" size="35.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radio4" layoutX="403.0" layoutY="225.0" mnemonicParsing="false" text="4" textFill="#124ebc" toggleGroup="$playerCount">
+            <font>
+                <Font name="WishfulWaves" size="35.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="radio5" layoutX="527.0" layoutY="225.0" mnemonicParsing="false" text="5" textFill="#124ebc" toggleGroup="$playerCount">
+            <font>
+                <Font name="WishfulWaves" size="35.0" />
+            </font>
+        </RadioButton>
+        
+        <!-- Disabled Next Button (Grey) -->
+        <ImageView fx:id="nextDisabledImage" fitHeight="92.0" fitWidth="88.0" layoutX="334.0" layoutY="303.0" onMouseClicked="#goToNameScreen" pickOnBounds="true" preserveRatio="true" visible="true">
+           	<image>
+                <Image url="@../../resource/image/nextGrey.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+
+        <!-- Enabled Next Button -->
+        <ImageView fx:id="nextEnabledImage" fitHeight="92.0" fitWidth="88.0" layoutX="334.0" layoutY="303.0" onMouseClicked="#goToNameScreen" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@../../resource/image/next.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </ImageView>
+    </children>
 </AnchorPane>

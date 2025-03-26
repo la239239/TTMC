@@ -10,13 +10,10 @@ import java.io.IOException;
 
 public class SceneSwitcher {
 
-    // Passe à une nouvelle scène
     public static void switchScene(MouseEvent event, String fxmlFile) {
         try {
-            // Charge la nouvelle scène
             Parent root = FXMLLoader.load(SceneSwitcher.class.getResource(fxmlFile));
             
-            // Récupère la fenêtre actuelle
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root);
             stage.setScene(scene);
@@ -27,7 +24,6 @@ public class SceneSwitcher {
         }
     }
 
-    // Affiche une boîte de dialogue d'erreur si le chargement d'une scène échoue
     private static void showErrorDialog(String title, String message) {
         javafx.scene.control.Alert alert = new javafx.scene.control.Alert(javafx.scene.control.Alert.AlertType.ERROR);
         alert.setTitle(title);

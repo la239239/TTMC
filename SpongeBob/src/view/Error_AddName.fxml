@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -8,25 +9,35 @@
 
 <AnchorPane prefHeight="369.0" prefWidth="762.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
+      <!-- Background image -->
       <ImageView fitHeight="432.0" fitWidth="768.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/error.png" />
          </image>
       </ImageView>
+      
+      <!-- Error message text -->
       <Text layoutX="212.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Players have names!">
          <font>
             <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
+      
+      <!-- Plankton image -->
       <ImageView fitHeight="283.0" fitWidth="284.0" layoutX="240.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/plankton.png" />
          </image>
       </ImageView>
+      
+      <!-- Back button to return to player name input screen -->
       <ImageView fitHeight="68.0" fitWidth="142.0" layoutX="14.0" layoutY="302.0" onMouseClicked="#BackPlayerName" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/back.png" />
          </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </ImageView>
    </children>
 </AnchorPane>

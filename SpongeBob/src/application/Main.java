@@ -15,9 +15,8 @@ public class Main extends Application {
             scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
             primaryStage.setScene(scene);
             
-            // Gestion de la fermeture de la fenêtre
             primaryStage.setOnCloseRequest(event -> {
-                event.consume(); // Empêche la fermeture immédiate
+                event.consume(); 
                 try {
                     Parent confirmRoot = FXMLLoader.load(getClass().getResource("/view/AreYouSure.fxml"));
                     Stage confirmStage = new Stage();

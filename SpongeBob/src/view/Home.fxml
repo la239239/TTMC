@@ -51,14 +51,5 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-
-      <ImageView fitHeight="62.0" fitWidth="140.0" layoutX="14.0" layoutY="389.0" onMouseClicked="#OpenExit" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/exit.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
    </children>
 </AnchorPane>

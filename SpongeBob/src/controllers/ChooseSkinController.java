@@ -1,12 +1,14 @@
 package controllers;
 
-import java.util.Objects;
-
 import application.SceneSwitcher;
+import javafx.animation.ScaleTransition;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
+import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.paint.Color;
+import javafx.util.Duration;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
@@ -34,14 +36,45 @@ public class ChooseSkinController {
     private void selectSkin(MouseEvent event) {
         // When a skin is selected
         Node clickedNode = (Node) event.getSource();
-        selectedSkin = clickedNode.getId(); // The ID of the selected image
+        String clickedSkin = clickedNode.getId(); // The ID of the selected image
 
-        // Display a debug message to verify the selected skin
-        System.out.println("Selected skin: " + selectedSkin);
+        // Reset the effects for all images
+        resetSkinEffects();
 
-        // Enable the "Next" button (show the normal image and hide the grey image)
+        // Apply an enlargement and glowing border effect to the selected image
+        ImageView selectedImage = (ImageView) clickedNode;
+        
+        // Enlargement effect
+        ScaleTransition scaleTransition = new ScaleTransition(Duration.millis(300), selectedImage);
+        scaleTransition.setToX(1.2); // Enlarge to 120% of the original size
+        scaleTransition.setToY(1.2); // Enlarge to 120% of the original size
+        scaleTransition.play();
+        
+        // Glowing border effect
+        DropShadow dropShadow = new DropShadow();
+        dropShadow.setColor(Color.YELLOW); // Color of the glowing border
+        dropShadow.setRadius(15); // Radius of the shadow
+        selectedImage.setEffect(dropShadow);
+
+        // Update the selected skin variable
+        selectedSkin = clickedSkin;
+
+        // Show the "Next" button
         nextDisabledImage.setVisible(false);
         nextEnabledImage.setVisible(true);
+    }
+
+    // Reset the effects for all images
+    private void resetSkinEffects() {
+        // Reset the effects of all images
+        for (Node node : nextEnabledImage.getParent().getChildrenUnmodifiable()) {
+            if (node instanceof ImageView) {
+                ImageView imageView = (ImageView) node;
+                imageView.setEffect(null); // Remove the glowing border effect
+                imageView.setScaleX(1); // Reset the scale
+                imageView.setScaleY(1); // Reset the scale
+            }
+        }
     }
 
     // Method to proceed to the next scene (BoardGame)
