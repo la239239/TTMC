@@ -12,7 +12,7 @@ public class Controller {
 
     @FXML
     private void OpenCredits(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "/view/Credits.fxml");
+        SceneSwitcher.switchScene(event, "/view/Credit.fxml");
     }
 
     @FXML
