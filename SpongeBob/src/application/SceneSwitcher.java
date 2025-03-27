@@ -20,7 +20,7 @@ public class SceneSwitcher {
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
-            showErrorDialog("Erreur de chargement", "Impossible de charger la scène : " + fxmlFile);
+            showErrorDialog("Loading error", "Impossible to charge the scene : " + fxmlFile);
         }
     }
 

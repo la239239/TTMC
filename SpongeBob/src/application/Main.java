@@ -9,10 +9,13 @@ import javafx.scene.Scene;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
+    	System.out.println(getClass().getResource("/view/Home.fxml"));
+    	System.out.println(getClass().getResource("/view/AreYouSure.fxml"));
+
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/view/Home.fxml"));
             Scene scene = new Scene(root);
-            scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+            //scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
             primaryStage.setScene(scene);
             
             primaryStage.setOnCloseRequest(event -> {
@@ -32,6 +35,8 @@ public class Main extends Application {
             System.err.println("Error loading FXML or CSS file: " + e.getMessage());
             e.printStackTrace();
         }
+    	
+
     }
 
     public static void main(String[] args) {
