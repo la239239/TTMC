@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="490.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="883.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/kitchen.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="361.0" fitWidth="590.0" layoutX="155.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/menuH.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="667.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Improbable">
+         <font>
+            <Font name="Krabby Patty" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="373.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="subject">
+         <font>
+            <Font name="Krabby Patty" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="79.0" fitWidth="80.0" layoutX="413.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/nextGrey.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="80.0" layoutX="413.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/next.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="280.0" fitWidth="274.0" layoutX="598.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/mrKrabs2.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="359.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="contenu">
+         <font>
+            <Font name="Underwater Love" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="14.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00">
+         <font>
+            <Font name="Krabby Patty" size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
