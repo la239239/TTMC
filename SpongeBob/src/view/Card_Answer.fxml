@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="490.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardAnswerController">
+   <children>
+      <!-- Fond -->
+      <ImageView fitHeight="500.0" fitWidth="883.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/kitchen.png" />
+         </image>
+      </ImageView>
+
+      <!-- Menu haut -->
+      <ImageView fitHeight="361.0" fitWidth="590.0" layoutX="155.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/menuH.png" />
+         </image>
+      </ImageView>
+
+      <!-- Sujet -->
+      <Label fx:id="answerLabel"  wrapText="true" alignment="TOP_CENTER" layoutX="201.0" layoutY="173.0" maxHeight="234.0" maxWidth="490.0" minHeight="100.0" minWidth="100.0" prefHeight="206.0" prefWidth="490.0" text=" asnwer" textFill="#a4520a" textOverrun="CLIP">
+         <font>
+            <Font name="Krabby Patty" size="28.0" />
+         </font>
+      </Label>
+
+      <!-- Mr Krabs -->
+      <ImageView fitHeight="280.0" fitWidth="274.0" layoutX="598.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/mrKrabs2.png" />
+         </image>
+      </ImageView>
+
+      <!-- Label "Réponse ?" -->
+      <Text fill="#a4520a" layoutX="246.0" layoutY="114.0" text="Did you get it right?">
+         <font>
+            <Font name="Underwater Love" size="32.0" />
+         </font>
+      </Text>
+
+      <!-- Bouton "OUI" -->
+      <ImageView fx:id="correctButton" fitHeight="92.0" fitWidth="161.0" layoutX="307.0" layoutY="391.0" onMouseClicked="#onCorrectClicked" onMouseEntered="#onCorrectButtonHover" onMouseExited="#onCorrectButtonExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/yes.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+
+      <!-- Bouton "NON" -->
+      <ImageView fx:id="wrongButton" fitHeight="92.0" fitWidth="161.0" layoutX="448.0" layoutY="391.0" onMouseClicked="#onWrongClicked" onMouseEntered="#onWrongButtonHover" onMouseExited="#onWrongButtonExit" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/no.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

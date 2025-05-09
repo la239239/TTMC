@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="490.0" prefWidth="862.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardChooseLevelController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="883.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/kitchen.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="361.0" fitWidth="590.0" layoutX="155.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/menuH.png" />
+         </image>
+      </ImageView>
+
+      <Text fx:id="subjectText" fill="WHITE" layoutX="358.0" layoutY="180.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject" textAlignment="CENTER" wrappingWidth="227.60891723632812">
+         <font>
+            <Font name="Krabby Patty" size="36.0" />
+         </font>
+      </Text>
+
+      <Text fill="WHITE" layoutX="221.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="How do you rate yourself in ... ">
+         <font>
+            <Font name="Krabby Patty" size="36.0" />
+         </font>
+      </Text>
+      
+      <RadioButton fx:id="level1" layoutX="221.0" layoutY="203.0" mnemonicParsing="false" onAction="#onLevelSelected" text="1" textFill="#a4520a">
+         <font>
+            <Font name="WishfulWaves" size="40.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="level2" layoutX="336.0" layoutY="203.0" mnemonicParsing="false" onAction="#onLevelSelected" text="2" textFill="#a4520a">
+         <font>
+            <Font name="WishfulWaves" size="40.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="level3" layoutX="445.0" layoutY="203.0" mnemonicParsing="false" onAction="#onLevelSelected" text="3" textFill="#a4520a">
+         <font>
+            <Font name="WishfulWaves" size="40.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="level4" layoutX="568.0" layoutY="203.0" mnemonicParsing="false" onAction="#onLevelSelected" text="4" textFill="#a4520a">
+         <font>
+            <Font name="WishfulWaves" size="40.0" />
+         </font>
+      </RadioButton>
+
+      <ImageView fx:id="nextButton" fitHeight="79.0" fitWidth="80.0" layoutX="413.0" layoutY="297.0" onMouseClicked="#onNextClicked" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+		    <image>
+		        <Image url="@../../resource/image/next.png" />
+		    </image>
+		    <cursor>
+		        <Cursor fx:constant="HAND" />
+		    </cursor>
+		</ImageView>
+
+
+      <!-- MR KRABS -->
+      <ImageView fitHeight="280.0" fitWidth="274.0" layoutX="598.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/mrKrabs2.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

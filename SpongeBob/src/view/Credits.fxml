@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+
+   <!-- Fond -->
+   <ImageView fitWidth="1920" fitHeight="1080" preserveRatio="false">
+      <image>
+         <Image url="@../../resource/image/background.png" />
+      </image>
+   </ImageView>
+
+   <!-- Contenu -->
+   <VBox alignment="CENTER" spacing="20">
+      <Text text="Credits">
+         <font>
+            <Font name="Krabby Patty" size="64.0" />
+         </font>
+      </Text>
+
+      <ImageView fitWidth="350" fitHeight="260" preserveRatio="true">
+         <image>
+            <Image url="@../../resource/image/friends_credits.png" />
+         </image>
+      </ImageView>
+
+      <VBox spacing="10" alignment="CENTER">
+         <Text text="Léa LECLERCQ" fill="#1d5c71">
+            <font>
+               <Font name="Underwater Love" size="20.0" />
+            </font>
+         </Text>
+         <Text text="Antoine LAMPOLE" fill="#a9308b">
+            <font>
+               <Font name="Underwater Love" size="20.0" />
+            </font>
+         </Text>
+         <Text text="Gabin LE FEVRE" fill="#959e11">
+            <font>
+               <Font name="Underwater Love" size="20.0" />
+            </font>
+         </Text>
+      </VBox>
+   </VBox>
+
+   <!-- Bouton retour -->
+   <ImageView fx:id="backButton" fitWidth="100" fitHeight="60" StackPane.alignment="BOTTOM_LEFT"
+              pickOnBounds="true" preserveRatio="true" onMouseClicked="#BackHome">
+      <image>
+         <Image url="@../../resource/image/back.png" />
+      </image>
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </ImageView>
+
+</StackPane>

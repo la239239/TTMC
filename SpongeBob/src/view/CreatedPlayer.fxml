@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="rootPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayersController">
+
+    <ImageView fx:id="backgroundImage" fitHeight="${root.height}" fitWidth="${root.width}" preserveRatio="false">
+        <image>
+            <Image url="@../../resource/image/background.png" />
+        </image>
+    </ImageView>
+<AnchorPane prefHeight="894.0" prefWidth="1618.0">
+        <!-- Title -->
+        <Text fill="#1b2999" layoutX="82.0" layoutY="97.0" text="Before getting started">
+            <font><Font name="WishfulWaves" size="48.0" /></font>
+        </Text>
+
+        <!-- Name input -->
+        <Label layoutX="581.0" layoutY="187.0" text="Name :" textFill="#1b2999">
+         <font>
+            <Font name="Underwater Love" size="19.0" />
+         </font></Label>
+        <TextField fx:id="playerNameField" layoutX="665.0" layoutY="186.0" prefHeight="30.0" prefWidth="220.0" />
+
+        <!-- Characters -->
+        <ImageView id="SquidAvailable" fx:id="SquidwardImage" fitHeight="197.0" fitWidth="90.0" layoutX="470.0" layoutY="391.0" onMouseClicked="#selectPawn">
+            <image><Image url="@../../resource/image/Squidward.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <ImageView id="SandyAvailable" fx:id="SandyImage" fitHeight="197.0" fitWidth="140.0" layoutX="560.0" layoutY="347.0" onMouseClicked="#selectPawn">
+            <image><Image url="@../../resource/image/Sandy.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <ImageView id="PatrickAvailable" fx:id="PatrickImage" fitHeight="197.0" fitWidth="140.0" layoutX="710.0" layoutY="346.0" onMouseClicked="#selectPawn">
+            <image><Image url="@../../resource/image/Patrick.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <ImageView id="KrabsAvailable" fx:id="MrKrabsImage" fitHeight="206.0" fitWidth="160.0" layoutX="847.0" layoutY="342.0" onMouseClicked="#selectPawn">
+            <image><Image url="@../../resource/image/MrKrabs.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <ImageView id="bobAvailable" fx:id="SpongebobImage" fitHeight="179.0" fitWidth="172.0" layoutX="986.0" layoutY="428.0" onMouseClicked="#selectPawn">
+            <image><Image url="@../../resource/image/Spongebob.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <!-- Next buttons -->
+        <ImageView fx:id="nextGreyImage" fitHeight="80.0" fitWidth="80.0" layoutX="700.0" layoutY="648.0" visible="true">
+            <image><Image url="@../../resource/image/nextGrey.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+        <ImageView fx:id="nextButton" fitHeight="80.0" fitWidth="80.0" layoutX="700.0" layoutY="648.0" onMouseClicked="#handleAddPlayer">
+            <image><Image url="@../../resource/image/next.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <!-- Play button -->
+        <ImageView fx:id="playButton" fitHeight="60.0" fitWidth="100.0" layoutX="1361.0" layoutY="482.0" managed="false" onMouseClicked="#handlePlayButton" visible="false">
+            <image><Image url="@../../resource/image/start.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <!-- Back button -->
+        <ImageView fx:id="backhome" fitHeight="50.0" fitWidth="130.0" layoutX="56.0" layoutY="758.0" onMouseClicked="#handleBackButton" visible="true">
+            <image><Image url="@../../resource/image/back.png" /></image>
+            <cursor><Cursor fx:constant="HAND" /></cursor>
+        </ImageView>
+
+        <VBox layoutX="1303.0" layoutY="171.0" spacing="10.0">
+    <children>
+        <HBox alignment="CENTER">
+            <children>
+                <Text fill="#1b2999" text="Players">
+                    <font><Font name="Krabby Patty" size="32.0" /></font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox spacing="5">
+            <children>
+                <ImageView fx:id="recapSpongebob" fitHeight="38.0" fitWidth="38.0">
+                    <image><Image url="@../../resource/image/spongebob_pawn.png" /></image>
+                </ImageView>
+                <Label fx:id="nameRecapBob" textFill="#7e7632" visible="true">
+                     <font>
+                        <Font name="Krabby Patty" size="21.0" />
+                     </font></Label>
+            </children>
+        </HBox>
+        <HBox spacing="5">
+            <children>
+                <ImageView fx:id="recapPatrickImage" fitHeight="38.0" fitWidth="38.0">
+                    <image><Image url="@../../resource/image/patrick_pawn.png" /></image>
+                </ImageView>
+                <Label fx:id="nameRecapPatrick" textFill="#961947" visible="true">
+                     <font>
+                        <Font name="Krabby Patty" size="21.0" />
+                     </font></Label>
+            </children>
+        </HBox>
+        <HBox spacing="5">
+            <children>
+                <ImageView fx:id="recapKrabsImage" fitHeight="38.0" fitWidth="38.0">
+                    <image><Image url="@../../resource/image/mrKrabs_pawn.png" /></image>
+                </ImageView>
+                <Label fx:id="nameRecapKrabs" textFill="#690505" visible="true">
+                     <font>
+                        <Font name="Krabby Patty" size="21.0" />
+                     </font></Label>
+            </children>
+        </HBox>
+        <HBox spacing="5">
+            <children>
+                <ImageView fx:id="recapSandyImage" fitHeight="38.0" fitWidth="38.0">
+                    <image><Image url="@../../resource/image/sandy_pawn.png" /></image>
+                </ImageView>
+                <Label fx:id="nameRecapSandy" textFill="#944e22" visible="true">
+                     <font>
+                        <Font name="Krabby Patty" size="21.0" />
+                     </font></Label>
+            </children>
+        </HBox>
+        <HBox spacing="5">
+            <children>
+                <ImageView fx:id="recapSquidwardImage" fitHeight="38.0" fitWidth="38.0">
+                    <image><Image url="@../../resource/image/squidward_pawn.png" /></image>
+                </ImageView>
+                <Label fx:id="nameRecapSquid" textFill="#328779" visible="true">
+                     <font>
+                        <Font name="Krabby Patty" size="21.0" />
+                     </font></Label>
+            </children>
+        </HBox>
+    </children>
+</VBox>
+    </AnchorPane>
+</StackPane>

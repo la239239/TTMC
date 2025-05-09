@@ -1,55 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
 
-<AnchorPane minHeight="400.0" minWidth="600.0" prefHeight="461.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
-   <children>
-      <ImageView fitHeight="461.0" fitWidth="777.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/background.png" />
-         </image>
-      </ImageView>
+<StackPane fx:id="rootPane" style="-fx-background-color: black; -fx-border-width: 2px; -fx-border-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+    
+    <ImageView fx:id="backgroundImage" preserveRatio="false" fitWidth="${root.width}" fitHeight="${root.height}">
+    <StackPane.margin>
+        <Insets />
+    </StackPane.margin>
+    <image>
+        <Image url="@../../resource/image/background.png" />
+    </image>
+</ImageView>
 
-      <ImageView fitHeight="151.0" fitWidth="152.0" layoutX="575.0" layoutY="389.0" onMouseClicked="#OpenCredits" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/credits.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
+    <!-- Conteneur pour les éléments UI -->
+    <StackPane>
+        <!-- Logo TTMC -->
+        <ImageView fitHeight="145" fitWidth="222" preserveRatio="true" StackPane.alignment="TOP_CENTER">
+            <image>
+                <Image url="@../../resource/image/logoTTMC.png" />
+            </image>
+            <StackPane.margin>
+                <Insets bottom="0.0" left="0.0" right="0.0" top="20.0" />
+            </StackPane.margin>
+        </ImageView>
 
-      <ImageView fitHeight="85.0" fitWidth="200.0" layoutX="280.0" layoutY="207.0" onMouseClicked="#OpenNumberOfPlayers" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/start.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
+        <!-- Bouton Start -->
+        <ImageView fitHeight="85" fitWidth="200" onMouseClicked="#CreatedPlayer" preserveRatio="true" StackPane.alignment="CENTER">
+            <image>
+                <Image url="@../../resource/image/start.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <StackPane.margin>
+                <Insets bottom="0.0" left="0.0" right="0.0" top="-100.0" />
+            </StackPane.margin>
+        </ImageView>
 
-      <ImageView fitHeight="62.0" fitWidth="119.0" layoutX="608.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/SpongeBob_logo.png" />
-         </image>
-      </ImageView>
+        <!-- Logo SpongeBob -->
+        <ImageView fitHeight="90.0" fitWidth="145.0" preserveRatio="true" StackPane.alignment="TOP_RIGHT">
+            <image>
+                <Image url="@../../resource/image/SpongeBob_logo.png" />
+            </image>
+            <StackPane.margin>
+                <Insets bottom="0.0" left="0.0" right="20.0" top="20.0" />
+            </StackPane.margin>
+        </ImageView>
 
-      <ImageView fitHeight="145.0" fitWidth="222.0" layoutX="277.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/logoTTMC.png" />
-         </image>
-      </ImageView>
+        <!-- Credits -->
+        <ImageView fitHeight="151" fitWidth="152" onMouseClicked="#OpenCredits" preserveRatio="true" StackPane.alignment="BOTTOM_RIGHT">
+            <image>
+                <Image url="@../../resource/image/credits.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <StackPane.margin>
+                <Insets bottom="20.0" left="0.0" right="20.0" top="0.0" />
+            </StackPane.margin>
+        </ImageView>
 
-      <ImageView fitHeight="112.0" fitWidth="167.0" layoutX="14.0" layoutY="6.0" onMouseClicked="#OpenRules" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../resource/image/Question.png" />
-         </image>
-         <cursor>
-            <Cursor fx:constant="HAND" />
-         </cursor>
-      </ImageView>
-   </children>
-</AnchorPane>
+        <!-- Bouton Question -->
+        <ImageView fitHeight="139.0" fitWidth="134.0" onMouseClicked="#OpenRules" preserveRatio="true" StackPane.alignment="TOP_LEFT">
+            <image>
+                <Image url="@../../resource/image/Question.png" />
+            </image>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <StackPane.margin>
+                <Insets bottom="0.0" left="10.0" right="0.0" top="10.0" />
+            </StackPane.margin>
+        </ImageView>
+    </StackPane>
+</StackPane>

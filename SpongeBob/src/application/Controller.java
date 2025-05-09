@@ -1,9 +1,25 @@
 package application;
 
+import java.util.List;
+
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import models.Player;
 
 public class Controller {
+
+    private List<Player> players;
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
 
     @FXML
     private void BackHome(MouseEvent event) {
@@ -12,7 +28,7 @@ public class Controller {
 
     @FXML
     private void OpenCredits(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "/view/Credit.fxml");
+        SceneSwitcher.switchScene(event, "/view/Credits.fxml");
     }
 
     @FXML
@@ -26,22 +42,37 @@ public class Controller {
     }
 
     @FXML
-    private void OpenChooseSkin(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "/view/ChooseSkin.fxml");
+    private void CreatedPlayer(MouseEvent event) {
+        SceneSwitcher.switchScene(event, "/view/CreatedPlayer.fxml");
     }
 
-    @FXML
-    private void OpenNumberOfPlayers(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "/view/NumberOfPlayers.fxml");
-    }
-    
     @FXML
     private void OpenBoardGame(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "/view/BoardGame.fxml");
+        SceneSwitcher.switchScene(event, "/view/BoardGame.fxml", players);
     }
+    @FXML
+    public void showExitConfirmation() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/AreYouSure.fxml"));
+            Parent root = loader.load();
+            Stage confirmStage = new Stage();
+            confirmStage.setScene(new Scene(root));
+            confirmStage.initModality(Modality.APPLICATION_MODAL);
+            confirmStage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    @FXML private StackPane rootPane;
+    @FXML private ImageView backgroundImage;
 
     @FXML
-    private void OpenName(MouseEvent event) {
-        SceneSwitcher.switchScene(event, "/view/ChooseName.fxml");
+    public void initialize() {
+        if (backgroundImage != null && rootPane != null) {
+            backgroundImage.fitWidthProperty().bind(rootPane.widthProperty());
+            backgroundImage.fitHeightProperty().bind(rootPane.heightProperty());
+        }
     }
+
 }

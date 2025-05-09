@@ -1,194 +1,1964 @@
 [
     {
-        "theme": "Analysis / OOP",
-        "level": 1,
-        "question": "You are developing a banking account management application. A transfer() method needs to be used by several account classes (current account, savings account). You want to ensure that each class implements its own version of the method. Which OOP mechanism guarantees this in Java?",
-        "answer": "Interface."
-    },
-    {
-        "theme": "Analysis / OOP",
-        "level": 1,
-        "question": "You have a Car class with attributes like make, model, and color. You want a Toyota Camry and a Honda Civic to share these attributes. What should you create to model this situation in an object-oriented language like Java?",
-        "answer": "Class."
-    },
-    {
-        "theme": "Analysis / OOP",
-        "level": 2,
-        "question": "In a library management application, you have a Book class and a Loan class, where a loan is associated with a book. You want to avoid duplicating the book’s information in each loan. Which OOP concept allows you to reuse this information in the loan?",
-        "answer": "Inheritance."
-    },
-    {
-        "theme": "Analysis / OOP",
-        "level": 2,
-        "question": "You are developing a user management application where each user can be an 'Administrator' or a 'Normal User.' Which element of a class diagram represents these two types of users?",
-        "answer": "Abstract class."
-    },
-    {
-        "theme": "Analysis / OOP",
-        "level": 3,
-        "question": "A drawing software allows you to add, delete, or modify shapes such as circles, rectangles, or triangles. These shapes share a common interface. Which design pattern is used here to handle the diversity of shapes while providing a uniform interface?",
-        "answer": "Composite."
-    },
-    {
-        "theme": "Analysis / OOP",
-        "level": 3,
-        "question": "You have an Animal class with a method makeSound(), but each type of animal (dog, cat, bird) makes a different sound. Which OOP concept allows you to customise this behaviour for each animal?",
-        "answer": "Polymorphism."
-    },
-    {
-        "theme": "Analysis / OOP",
-        "level": 4,
-        "question": "You have a project management application. Each task can be in the states 'To Do', 'In Progress', or 'Completed'. Which element of a state machine diagram represents these different states?",
-        "answer": "State."
-    },
-    {
-        "theme": "Entertainment",
-        "level": 1,
-        "question": "Video Games: How many times was Minecraft (the most sold game of all time) sold (within ten million copies)?",
-        "answer": "300 million times."
-    },
-    {
-        "theme": "Entertainment",
-        "level": 1,
-        "question": "Which country won the first-ever football World Cup?",
-        "answer": "Uruguay in 1930."
-    },
-    {
-        "theme": "Entertainment",
-        "level": 1,
-        "question": "Music: Which group sang 'Don’t Stop Me Now' back in 1979?",
-        "answer": "Queen."
-    },
-    {
-        "theme": "Entertainment",
-        "level": 1,
-        "question": "Movie: What is the first movie from the Marvel universe?",
-        "answer": "Iron Man in 2008."
-    },
-    {
-        "theme": "Entertainment",
-        "level": 2,
-        "question": "In which animated movie can the character Baloo be found?",
-        "answer": "The Jungle Book (1967)."
-    },
-    {
-        "theme": "Entertainment",
-        "level": 2,
-        "question": "Which Pixies song starts with the phrase 'With your feet on the air and your head on the ground'?",
-        "answer": "'Where Is My Mind?'"
-    },
-    {
-        "theme": "Entertainment",
-        "level": 3,
-        "question": "What is the name of the director of the movie Inception, released in 2010?",
-        "answer": "Christopher Nolan."
-    },
-    {
-        "theme": "Entertainment",
-        "level": 4,
-        "question": "How long is the longest movie ever made? Hint: It’s called Logistics.",
-        "answer": "The film is 857 hours long, which is 35 days and 17 hours."
-    },
-    {
-        "theme": "Education",
-        "level": 1,
-        "question": "Math: Solve this equation (((((135/9)+117)/3)-27)*19).",
-        "answer": "323."
-    },
-    {
-        "theme": "Education",
-        "level": 1,
-        "question": "Geography: On which two continents is Russia located?",
-        "answer": "Europe and Asia."
-    },
-    {
-        "theme": "Education",
-        "level": 1,
-        "question": "What is the shortest month of the year?",
-        "answer": "February, with 28 days or 29 in a leap year."
-    },
-    {
-        "theme": "Education",
-        "level": 2,
-        "question": "Science: How long is the lifespan of a human red blood cell?",
-        "answer": "120 days."
-    },
-    {
-        "theme": "Education",
-        "level": 2,
-        "question": "How many countries are there in Europe?",
-        "answer": "There are 44 countries in Europe."
-    },
-    {
-        "theme": "Education",
-        "level": 2,
-        "question": "Which planet is closest to the Sun?",
-        "answer": "Mercury."
-    },
-    {
-        "theme": "Education",
-        "level": 3,
-        "question": "History: In which year did Christopher Columbus discover America?",
-        "answer": "1492."
-    },
-    {
-        "theme": "Education",
-        "level": 3,
-        "question": "How many English kings and queens have there been in total?",
-        "answer": "40 kings and 13 queens, totaling 53 monarchs."
-    },
-    {
-        "theme": "Education",
-        "level": 4,
-        "question": "How old is the Earth (within a billion years)?",
-        "answer": "4.5 billion years old."
-    },
-    {
-        "theme": "Education",
-        "level": 4,
-        "question": "What’s the happiest country on Earth based on the World Happiness Report?",
-        "answer": "Finland."
-    },
-    {
-        "theme": "Improbable",
-        "level": 1,
-        "question": "How heavy is a cloud? A kg, a tonne, a thousand tonnes, a million tonnes?",
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "How heavy is a cloud? A kg,\n a tonne, a thousand tonnes,\na million tonnes?",
         "answer": "A million tonnes."
     },
     {
-        "theme": "Improbable",
-        "level": 1,
-        "question": "How many times would you need to fold a paper (0.1 millimetre) to reach the moon?",
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "How many times would you need to\n fold a paper (0.1 millimetre) to reach the moon?",
         "answer": "Only 42 times (but you won’t be able to fold it more than 8 times)."
     },
     {
-        "theme": "Improbable",
-        "level": 2,
-        "question": "What is the only letter that does not appear in any U.S. state name?",
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Video Games: How many times was Minecraft\n (the most sold game of all time) sold (within ten million copies)?",
+        "answer": "300 million\n times."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Which country won the first-ever football World Cup?",
+        "answer": "Uruguay in\n1930."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "What is the name of the director of the movie Inception,\nreleased in 2010?",
+        "answer": "Christopher\nNolan."
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Math: Solve this equation\n(((((135/9)+117)/3)-27)*19).",
+        "answer": "323."
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Science: How long is the\n lifespan of a human red blood cell?",
+        "answer": "120 days."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "You are at a café and want a hot drink.\nThe waiter asks you to choose between coffee, tea, or hot chocolate. Which design pattern is illustrated by this choice?",
+        "answer": "Factory Method."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "What is the username of the creator of Minecraft?",
+        "answer": "Notch"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Who was the goalkeeper of the Spain team during the World Cup 2010 ?",
+        "answer": "Iker Casillas"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "What do you need to add to your computer to be able to type on it?",
+        "answer": "a keyboard"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What is the name of the galaxy next to the Milky Way?",
+        "answer": "Andromeda"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In Java, what’s the superclass of all the other classes ?",
+        "answer": "the Object class"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What's the Singleton for?",
+        "answer": "Allows you to have a single instance of a class"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "What’s the name of the country where ouagadougou is the capital ?",
+        "answer": "Burkina Faso"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Who wrote “La Fontaine’s Fables” ?",
+        "answer": "Jean de La Fontaine"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "When was Minecraft Created ?",
+        "answer": "2009"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Which nation won the EURO 1992 ?",
+        "answer": "Denmark"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What’s the name of the module/security protocol required to download Windows 11 on a computer ?",
+        "answer": "TPM 2.0 (Trusted Platform Module version 2.0)"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which are the gaseous planets in our solar system?",
+        "answer": "Jupiter, Saturn, Uranus, Neptune"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "Why do we use inheritance in programming ? Give one reason :",
+        "answer": "Code Reusability, Hierarchy Establishment, Enhanced Maintainability"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "What is the difference between Abstract Factory and Factory Method?",
+        "answer": "The Abstract Factory allows to create objects grouped in family without knowing the concrete class while the Factory Method allows not to worry about subclasses when creating objects using polymorphism"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What’s the capital of Australia ?",
+        "answer": "Canberra"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Name three europeans authors",
+        "answer": "Victor Hugo, William Shakespeare, Marcel Proust"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "What is the only letter that does not appear in any\nU.S. state name?",
         "answer": "The letter 'Q.'"
     },
     {
-        "theme": "Improbable",
-        "level": 3,
-        "question": "What is the record for the longest fart in minutes and seconds?",
-        "answer": "It lasted 2 minutes and 42 seconds."
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What is the record for the longest fart in minutes\nand seconds?",
+        "answer": "It lasted 2 minutes\n and 42 seconds."
     },
     {
-        "theme": "Improbable",
-        "level": 2,
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
         "question": "What is the smallest non-living particle?",
         "answer": "The atom."
     },
     {
-        "theme": "Improbable",
-        "level": 4,
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
         "question": "Who is the author who has written the most books?",
         "answer": "L. Ron Hubbard."
     },
     {
-        "theme": "Improbable",
-        "level": 4,
-        "question": "What is the letter Q.",
-        "answer": "Finland"
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "How long is the longest\nmovie ever made? Hint: It’s called Logistics.",
+        "answer": "The film is 857 hours long,\nwhich is 35 days and 17 hours."
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "How many English\n kings and queens have there been in total?",
+        "answer": "40 kings and 13 queens,\n totaling 53 monarchs."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "A drawing software allows y\nou to add, delete, or modify shapes such as circles, rectangles, or triangles. These shapes share a common interface. Which design pattern is used here to handle the diversity of shapes while providing a uniform interface?",
+        "answer": "Composite."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In a library management application, you have a Book\nclass and a Loan class, where a loan is associated with a book. You want to avoid duplicating the book’s information in each loan. Which OOP concept allows you to reuse this information in the loan?",
+        "answer": "Inheritance."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Music: Which group sang\n 'Don’t Stop Me Now' back in 1979?",
+        "answer": "Queen."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Movie: What is the first movie from\n the Marvel universe?",
+        "answer": "Iron Man in 2008."
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Geography: On which two continents\n is Russia located?",
+        "answer": "Europe and Asia."
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "History: In which year did Christopher\nColumbus discover America?",
+        "answer": "1492."
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which planet is closest\nto the Sun?",
+        "answer": "Mercury."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "You have a project management application.\nEach task can be in the states 'To Do', 'In Progress', or 'Completed'. Which element of a state machine diagram represents these different states?",
+        "answer": "State."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "You have an Animal class with a method makeSound(),\nbut each type of animal (dog, cat, bird) makes a different sound. Which OOP concept allows you to customise this behaviour for each animal?",
+        "answer": "Polymorphism."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "You are developing a user management application where\neach user can be an 'Administrator' or a 'Normal User.' Which element of a class diagram represents these two types of users?",
+        "answer": "Abstract class."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Who is the winner of the World Cup in 2018 ? ",
+        "answer": "France"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "What club is Cristiano Ronaldo currently playing for ? ",
+        "answer": "Al Nassr in Saoudi Arabia"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Who was the striker of the Belgium national team in 2012 ? ",
+        "answer": "Christian Benteke"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Which team was Bayern Munich playing against when Robert Lewandowski scored 5 goals in only 9 minutes ? ",
+        "answer": "Wolfsburg."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Who is the main pilot of Goldorak, and where does he come from? ",
+        "answer": "The main pilot of Goldorak is Actarus , and he comes from the planet Fleed. "
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "What is the original Japanese name of Goldorak? ",
+        "answer": "UFO Robo Grendizer"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "What is the name of the organization that invades Actarus' home planet, and who is their leader? ",
+        "answer": "the Vega Empire, and its leader is Great King Vega. "
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "What is the name of the base where Goldorak is hidden and protected on Earth? ",
+        "answer": "The White Ranch. "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Which seas border the EU in the north? ",
+        "answer": "Baltic and North Seas. "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which river in the EU exceeds 2,000 km? ",
+        "answer": "The Danube, a major waterway.  "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which lake shared with Switzerland has undefined borders? ",
+        "answer": "Lake Constance.  "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "Which country has limited access to the sea via Neume? ",
+        "answer": "Bosnia-Herzegovina. "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Which country joined the EU in 2013, marking the last enlargement before Brexit? ",
+        "answer": "Croatia. "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which 1998 summit decided to launch the euro in 1999? ",
+        "answer": "Brussels Summit.  "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which act of 1986 was aimed at completing the single market by 1992? ",
+        "answer": "the Single European Act. "
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "Which decision of 1964 established the primacy of European law? ",
+        "answer": "The Costa v. ENEL judgment. "
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": " What is the name of the triangle associated with mysterious disappearances in the Atlantic Ocean? ",
+        "answer": " The Bermuda Triangle"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": " What phenomenon involves objects that seem to defy gravity, such as cars rolling uphill on their own? ",
+        "answer": " Magnetic hills (or gravity hills). "
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": " What is the name of the theory suggesting that our universe is just a computer simulation? ",
+        "answer": " The simulation theory. "
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": " What phenomenon involves unexplained sounds heard in different parts of the world, often described as \"sky noises\"? ",
+        "answer": " Skyquakes or \"sky noises.\" "
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": " What mythical animal is often depicted as a horse with a horn on its forehead? ",
+        "answer": " The unicorn"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": " What legendary sea monster is described as a giant squid capable of sinking ships? ",
+        "answer": " The Kraken. "
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": " What mythical being is often associated with disappearances in forests and mountains? ",
+        "answer": " The Yeti. "
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": " What mythical creature is described as a lion with an eagle's head and wings? ",
+        "answer": " The Griffin"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What term refers to a blueprint or template for creating objects in OOP? ",
+        "answer": "A class. "
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "What is the difference between \"public\" and \"private\" access modifiers? ",
+        "answer": "Public members can be accessed from anywhere, while private members can only be accessed within the class. "
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What is an \"interface\" in OOP? ",
+        "answer": "A contract that defines a set of methods that a class must implement. "
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "What is an \"abstract class\" in OOP? ",
+        "answer": "A class that cannot be instantiated and may contain both implemented and unimplemented methods. "
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "How many behavioural design patterns are they in Object Oriented programming languages ?",
+        "answer": "10"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "Give 3 structural design patterns.",
+        "answer": "Adapter, Composite, Proxy"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What is the difference between the design pattern Template Method and the design pattern Factory Method ?",
+        "answer": "Template Method: Defines the skeleton of an algorithm and lets subclasses override specific steps. Factory Method: Defines an interface for object creation and delegates instantiation to subclasses."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "4.\tWho created the design pattern Observer and when ?",
+        "answer": "The “Gang of Four” created the design pattern Observer in 1994."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "Which OOP concept allows creating multiple objects from the same model?",
+        "answer": "Class"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "Which OOP principle hides the internal details of a class and only exposes what is necessary?",
+        "answer": "Encapsulation"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "Which OOP principle allows a class to be used interchangeably with its parent class?",
+        "answer": "Polymorphism"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "What is the name of the OOP principle that states a derived class should be usable in place of its parent class without altering the program’s correctness?",
+        "answer": "Liskov Substitution"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "In which country is the city of Paris located?",
+        "answer": "France"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "In which country is the city of Toronto located?",
+        "answer": "Canada"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "In which country is the city of Kyoto located?",
+        "answer": "Japan"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "In which country is the city of Valparaíso located?",
+        "answer": "Chile"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Which country is known for his famous haka ?",
+        "answer": "New Zealand"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "How many players are on field each side ?",
+        "answer": "15"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Which country has won the most World Cup?",
+        "answer": "South Africa"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "What is the name of the trophy awarded to the winner of the Six Nations Tournament?",
+        "answer": "Championship Trophy"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "How many stars stands on the USA flag ?",
+        "answer": "50"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "How many stars stands on the European Union flag ?",
+        "answer": "12"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which country's flag consists of a red dragon on a green and white background?",
+        "answer": "Wales"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "Which country is the only one to have a firearm on its flag ?",
+        "answer": "Mozambique"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Who is the artist who released \"beat it\" in 1982 ?",
+        "answer": "Michael Jackson"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "What is the most listened to Beatles song ?",
+        "answer": "Here Comes the Sun"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": ". In what year did Freddy Mercury, emblematic singer of the band Queen, die ?",
+        "answer": "1991"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "What was the first single by the band Nirvana to reach number one on the charts and became the anthem of grunge ?",
+        "answer": "Smells Like Teen Spirit"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Quelle est la bière belge la plus exportée dans le monde ?",
+        "answer": "Stella Artois"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Quel verre emblématique en forme de calice est souvent utilisé pour déguster les bières trappistes ?",
+        "answer": "Le verre à trappiste"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "Combien de brasseries trappistes produisent encore de la bière en Belgique ?",
+        "answer": "Six"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Quelle brasserie belge produit une bière dont le nom signifie 'Diable' en flamand ?",
+        "answer": "Brasserie Duvel Moortgat"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "What is Michael Jackson’s nickname ?",
+        "answer": "The King of Pop"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Which instrument is primarily associated with Jimi Hendrix ?",
+        "answer": "The electric guitar"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Which artist composed the music for the movie Interstellar ?",
+        "answer": "Hans Zimmer"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Which British band released the album The Dark Side of the Moon in 1973 ?",
+        "answer": "Pink Floyd"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "How many sides does a hexagon have ?",
+        "answer": "6"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "What is the name of the constant approximately equal to 3.1416 ?",
+        "answer": "Pi (π)"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which theorem states that in a right triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides ?",
+        "answer": "The Pythagorean theorem"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What is the name of the irrational number approximately equal to 2.718, used as the base of the natural logarithm ?",
+        "answer": "Euler’s number (e)"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "What is the name of the robot in Star Wars that accompanies C-3PO ?",
+        "answer": "R2-D2"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Which director is known for his intertwined films like Pulp Fiction and Kill Bill ?",
+        "answer": "Quentin Tarantino"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "In Inception, what object does Dom Cobb use to determine whether he is dreaming ?",
+        "answer": "A spinning top"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Which 1994 film features a prisoner escaping through a tunnel dug over 19 years ?",
+        "answer": "The Shawshank Redemption"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What is the central concept of OOP that allows organizing code into entities ?",
+        "answer": "Objects"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "Which OOP principle allows a class to inherit properties and methods from another ?",
+        "answer": "Inheritance"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "Which Java keyword is used to declare a non-instantiable class ?",
+        "answer": "Abstract"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "What concept in OOP provides reusable solutions to common problems and helps to design software architecture more efficiently ?",
+        "answer": "Design patterns"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Which bird is capable of mimicking human speech and various sounds, often kept as a pet for this reason ?",
+        "answer": "Parrot"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Which insect is known for its ability to carry objects many times its own body weight ?",
+        "answer": "Ant"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "Which animal has the ability to regrow its tail ?",
+        "answer": "Lizard"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Which mammal is known for its ability to glide through the air using a membrane called a patagium ?",
+        "answer": "Flying squirrel"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Which 19th-century movement, illustrated by Victor Hugo, emphasized emotional expression and creative freedom ? ",
+        "answer": "Romanticism"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which literary movement, initiated by Émile Zola, aimed to represent reality scientifically and objectively ?",
+        "answer": "Naturalism"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which 17th-century literary movement advocated clarity, order, and reason, drawing inspiration from ancient works ?",
+        "answer": "Classicism"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "Which 20th-century movement, influenced by Freud and surrealism, explored absurdity and the meaninglessness of existence ?",
+        "answer": "Existentialism"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "What is the name of the triangle where several planes and ships have mysteriously disappeared ?",
+        "answer": "The Bermuda Triangle"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "What natural phenomenon is characterized by glowing lights in the sky, typically visible near the Arctic and Antarctic ?",
+        "answer": "Aurora borealis"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "Which country has the highest number of people claiming to have seen UFOs ?",
+        "answer": "The United States"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "What is the probability of being struck by lightning in a year (within 0,2 million) ?",
+        "answer": "About 1 in 1.2 million"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "Which component is considered the \"brain\" of the computer and executes program instructions ?",
+        "answer": "The processor (CPU)"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "Which device is used to store data permanently, even when the computer is off ?",
+        "answer": "The hard drive (HDD or SSD)"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What type of memory is used to temporarily store data currently in use by the processor ?",
+        "answer": "Random Access Memory (RAM)"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "Which bus is used to connect modern graphics cards to motherboards ?",
+        "answer": "PCI Express (PCIe)"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "-\tWhat specie is Ravi's pet? ",
+        "answer": "Reptile"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "-\tWhich princess fell in love with an amphibian",
+        "answer": "Tiana"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "-\tWhich Disney character learns that true beauty comes from within rather than appearance? ",
+        "answer": "Belle"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "-\tWhich Disney film teaches children about emotions and mental health?",
+        "answer": "Inside out"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "-\tIn Phineas and Ferb, Candace is always watching her brothers and tries to alert their mom when they conduct crazy experiments. Which design pattern does this represent? ",
+        "answer": "Observer"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "-\tIn The Cheetah Girls, the girls choose different strategies to impress the judges: Dorinda dances, Galleria sings with power, Chanel uses her charisma. Which design pattern does this represent? ",
+        "answer": "Strategy"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "-\tWho was afraid of grass the first time she saw it? ",
+        "answer": "Rapunezl"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "-\tIn “The Lion King,” what is the most absurd sound that Timon makes when trying to distract a predator?\n",
+        "answer": "A ridiculously high-pitched, fast-talking sound"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "-\tWho voiced Phineas in “Phineas and Ferb”?",
+        "answer": "Vincent Martella & Thomas Brodie-Sangster"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "-\tWhich Disney film teaches the importance of honesty through the story of a young boy who can't lie? ",
+        "answer": "Pinocchio"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Which wizard turned into a woman due to a bad spell?",
+        "answer": "Maw Russo"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "What is the real name of Spider-Man?",
+        "answer": "Peter Parker"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "What was the name of the series that starred two brothers with geometric head shapes? ",
+        "answer": "Phineas & Ferb"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which Disney princess is the most passionate about reading?",
+        "answer": "Belle"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "In which film do the characters learn that their true power lies within themselves? ",
+        "answer": "Moana"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "Which Disney movie features a computer program\tthat helps a boy become a hero?",
+        "answer": "Big Hero 6"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "Which Disney character exemplifies the concept of encapsulation in object-oriented \nprogramming?",
+        "answer": "Baymax"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "Which Disney movie emphasizes the importance of debugging and fixing errors\t\nin a system?",
+        "answer": "Wreck-It Ralph"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What silly activity do the characters in “Zootopia” do when they’re bored?",
+        "answer": "They slide down the DMV’s counter"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "What is the most\tsurprising fact about the creation of the character of Tinker Bell?",
+        "answer": "She was initially not intended to be a major character"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which Disney movie shows a young inventor creating a time machine?",
+        "answer": "Meet the Robinsons"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "In \"Big Hero 6,\" what does Hiro study to become an inventor? ",
+        "answer": "Robotics"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Did Walt Disney create Mickey Mouse?",
+        "answer": "YES"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "What is the name of the mysterious evil triangle that appears in Gravity Falls?",
+        "answer": "Bill Cipher"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Which animal lives a double life as soon as it puts on its hat?",
+        "answer": "Perry the Platypus"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Who teaches Simba about responsibility in \"The Lion King\"?",
+        "answer": "Mufasa"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What does CPU stand for in a computer?",
+        "answer": "Central Processing Unit"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "What is the primary programming language used in the development of video games bases on Disney properties?",
+        "answer": "C++"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "Which Disney character could represent the concept of inheritance in OOP?",
+        "answer": "Simba"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Which Disney character changes outfits faster than a model during Fashion Week?",
+        "answer": "Remy"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "What silly thing does Donald Duck often get frustrated about in his cartoons? ",
+        "answer": "Technology or gadgets"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Name one hostile mob (monster) in Minecraft",
+        "answer": "Zombie, Zombie Villager, Reinforced Zombie, Baby Zombie, Baby Zombie Jockey (Chicken Jockey), Skeleton, Reinforced Skeleton, Spider, Cave Spider, Creeper, Enderman, Witch, Pillager, Vindicator, Evoker, Ravager, Illusioner, Guard, Slime, Phantom, Ghast, Blaze, Wither Skeleton, Magma Cube, Piglin Brute, Hoglin, Zoglin, Endermite, Shulker, Ender Dragon, Wither"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Name a well-known club.",
+        "answer": "Exemple: Real Madrid; FC Barcelone, Liverpool, …"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "What is the list of components that are required to build a working computer ?",
+        "answer": "Motherboard, power supply, RAM (Random Acess Memory), CPU (Processor), GPU (graphics card), Storage media (HDD, SDD, NVME)"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "What is the closest planet of the Sun?",
+        "answer": "Mercury "
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "What’s polymorphism in object-oriented programming ?",
+        "answer": "a programming principle which allows objects of different classes, objects, variables and methods to exist in different forms."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What are construction design patterns used for?",
+        "answer": "Abstract object creation mechanisms"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "What is the capital of Belgium ?",
+        "answer": "Brussels"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What’s the name of the author of “the Odyssey” ? ",
+        "answer": "Homer"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "What is the username of the creator of Minecraft?",
+        "answer": "Notch"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Who was the goalkeeper of the Spain team during the World Cup 2010 ?",
+        "answer": "Iker Casillas"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "What do you need to add to your computer to be able to type on it?",
+        "answer": "a keyboard"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What is the name of the galaxy next to the Milky Way?",
+        "answer": "Andromeda"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In Java, what’s the superclass of all the other classes ?",
+        "answer": "the Object class"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What's the Singleton for?",
+        "answer": "Allows you to have a single instance of a class"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "What’s the name of the country where ouagadougou is the capital ?",
+        "answer": "Burkina Faso"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Who wrote “La Fontaine’s Fables” ?",
+        "answer": "Jean de La Fontaine"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "When was Minecraft Created ?",
+        "answer": "2009"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Which nation won the EURO 1992 ?",
+        "answer": "Denmark"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What’s the name of the module/security protocol required to download Windows 11 on a computer ?",
+        "answer": "TPM 2.0 (Trusted Platform Module version 2.0)"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which are the gaseous planets in our solar system?",
+        "answer": "Jupiter, Saturn, Uranus, Neptune"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "Why do we use inheritance in programming ? Give one reason :",
+        "answer": "Code Reusability, Hierarchy Establishment, Enhanced Maintainability"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "What is the difference between Abstract Factory and Factory Method?",
+        "answer": "The Abstract Factory allows to create objects grouped in family without knowing the concrete class while the Factory Method allows not to worry about subclasses when creating objects using polymorphism"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What’s the capital of Australia ?",
+        "answer": "Canberra"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Name three europeans authors",
+        "answer": "Victor Hugo, William Shakespeare, Marcel Proust"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Who made the famous music “Creeper Aw MAAN” (\"Revenge\" - A Minecraft Parody of Usher's DJ Got Us Fallin' In Love )",
+        "answer": "CaptainSparklez"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "What is the name of the mens' Belgian national team?",
+        "answer": "Red Devils"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Name one OS (Operating System) that can be installed on your computer :",
+        "answer": "Linux, Windows"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "What is the name of our planet?",
+        "answer": "The Earth"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What’s inheritance in programming?",
+        "answer": "an organizational structure in which items are ranked in a specific manner, usually according to levels of importance. (the answer is also valid if the player talks about hierarchy or subclasses and superclasses)."
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "List all the Design Patterns of construction",
+        "answer": "Singleton, Abstract Factory, Factory Method, Builder"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Give five capital of the Europe :",
+        "answer": "Exemple: Brussels, Paris, Amsterdam, Berlin, Madrid, London, Rome"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Who wrote “Les Misérables” ? ",
+        "answer": "Victor Hugo"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "What is the capital of France ?",
+        "answer": "Paris"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "What is the name of the science that deals with the study of the Earth’s atmosphere?",
+        "answer": "Meteorology"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In Java, which method is used to find the length of a string?",
+        "answer": ".length()"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What is the process that allows reading and writing in files in OOP?",
+        "answer": "Serialization"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "In which TV series can you find the character named Walter White?",
+        "answer": "Breaking Bad"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Which TV series is based on the works of George R. R. Martin?",
+        "answer": "Game of Thrones"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What is the most dangerous animal in the world (based on deaths per year)?",
+        "answer": "Mosquito"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "What is the only food that never spoils?",
+        "answer": "Honey"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "Which country has the highest university enrolment rate in the World ?",
+        "answer": "South Korea"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Which technology is commonly used for remote learning?",
+        "answer": "Video conferencing platforms"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What type of UML relationship is represented by a solid arrow with an empty diamond?",
+        "answer": "Aggregation"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In a UML sequence diagram, which symbol represents a method call?",
+        "answer": "A solid horizontal arrow"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Which Belgian player won the PFA Player of the Year award in the Premier League in 2021?",
+        "answer": "Kevin De Bruyne"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": " In Which MCU movie does Thanos first appear In a postcredit scene?",
+        "answer": "Avengers"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "What is the main organ of the circulatory system?",
+        "answer": "The heart"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": " How many faces does a regular dodecahedron have?",
+        "answer": "12"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "What is the chemical symbol for gold?",
+        "answer": "Au"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What is the longest river in the world?",
+        "answer": "The Nile"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In Java, what is the purpose of the super keyword?",
+        "answer": "refers the superclass"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What keyword is used to define a constant in Java",
+        "answer": "final"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Who is the main character in the video game The Legend of Zelda series?",
+        "answer": "Link"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "What is the name of the fictional country in Black Panther?",
+        "answer": "Wakanda"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "How many continents are there on Earth?",
+        "answer": "7"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "What is the most distant human-made object from Earth?",
+        "answer": "Voyager 1"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Which video game, developed in 2015, requires players to control a team of cats making strategic decisions while living adventures on an alien planet?",
+        "answer": "Cat Quest"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Which video game uses a \"walking simulator\" concept where the player explores a strange city filled with bizarre creatures and solves puzzles by interacting with absurd objects?",
+        "answer": "Jazzpunk"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Which musical video game developed by Harmonix popularized the \"guitar hero\" concept with a plastic guitar controller?",
+        "answer": "Guitar Hero"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "In which rhythm game developed by Ubisoft do players press buttons in time with the music, using a controller or a dance mat?",
+        "answer": "Just Dance"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "When was the first commercial video game released?",
+        "answer": "In 1972, with the game \"Pong\""
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Who is considered the father of modern video games?",
+        "answer": "Ralph H. Baer"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "Which French-speaking YouTuber, known for his videos on programming and video games, created a programming language entirely using emojis?",
+        "answer": "V2F"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In a video game, when creating a class to represent a character, which keyword is generally used to ensure that an attribute (such as health or mana points) is only accessible within its own class?",
+        "answer": "private"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Which video game holds the record for the highest number of simultaneous players on a single map, with millions of participants?",
+        "answer": " Fortnite (live events like the Travis Scott concert)."
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "Which racing game holds the record for the longest drift ever performed in-game, with over 500 kilometers of continuous drifting?",
+        "answer": "Gran Turismo 7"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "What is the first game developed and published by Riot Games, released in 2009, that popularized the MOBA (Multiplayer Online Battle Arena) genre?",
+        "answer": "League of Legends."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "What is the name of the tactical shooter (FPS) developed by Riot Games, released in 2020?",
+        "answer": "Valorant"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which video game allows players to build and launch rockets while learning the basics of astronomy and physics?",
+        "answer": "Kerbal Space Program"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which video game, developed by Valve, uses physics-based puzzles to teach scientific concepts while telling a captivating story?",
+        "answer": "Portal 2"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In video game development, which OOP concept is used to allow an object to take multiple forms, such as an enemy that can be both a \"fighter\" and a \"flyer\"?",
+        "answer": "Polymorphism"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "In a video game, which design pattern is used to create complex objects (such as a game level or a character) step by step, separating construction from the final representation?",
+        "answer": "The Builder Pattern"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "Which Fortnite player won $3 million in a single competition, setting a record for the highest earnings in an eSports tournament?",
+        "answer": "Bugha (Kyle Giersdorf), winner of the Fortnite World Cup 2019"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Which eSports event gathered more than 100,000 spectators in person for a single final, setting a world record for live audience attendance?",
+        "answer": "League of Legends World Championship 2017"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Which FPS, developed by Valve, is famous for its competitive multiplayer mode and iconic maps like 'Dust II' and 'Inferno'?",
+        "answer": "Counter-Strike: Global Offensive"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Which FPS features a multiplayer mode where players take on the role of heroes with unique abilities, such as Tracer or Reaper?",
+        "answer": "Overwatch"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which video game, developed by Nintendo, offers language lessons (such as English or Japanese) through interactive mini-games?",
+        "answer": "Learn with Pokémon: Typing Adventure"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which video game, released in 2016, allows players to learn Japanese by exploring a fantasy world and solving linguistic puzzles?",
+        "answer": "Learn Japanese To Survive!"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In an RPG, a spell system allows players to cast different types of magic (fire, ice, lightning, etc.). Each spell has its own effects, mana costs, and animations. Which design pattern would you use to structure this system flexibly, allowing new spells to be added easily without modifying existing code?",
+        "answer": "Strategy Pattern"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "In a sandbox construction game, the player can create buildings composed of multiple elements (walls, roofs, doors, windows, etc.). Each building can be saved and reloaded later with its structure intact.\nWhich design pattern would you use to represent these buildings hierarchically and allow flexible management of their components?\n",
+        "answer": "Composite Pattern"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Which video game allows players to control a character that is actually a bookshelf filled with objects inside a house, aiming to escape forces threatening the house's stability?",
+        "answer": "Shelfie"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "In which video game do players control a single pixel that moves through different colorful levels, reacting to its environment?",
+        "answer": "PixelJunk Eden."
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "What is the name of the main character in \"Super Mario Bros\"?",
+        "answer": "Mario"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Who is the creator of the \"The Legend of Zelda\" series?",
+        "answer": "Shigeru Miyamoto"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": " Which video game allows students to learn history by recreating major historical events while exploring cities and monuments in 3D?",
+        "answer": "Assassin's Creed: Discovery Tour"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "In which simulation video game do players manage a business to learn financial management and marketing skills?",
+        "answer": "SimCity or RollerCoaster Tycoon"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "Which object-oriented programming concept in Java is commonly used in video games to allow different types of game objects (such as enemies, characters, and collectible items) to share common behaviors while having unique characteristics?",
+        "answer": "Inheritance"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "In game development, which design pattern is commonly used to ensure that there is only one instance of a global object, such as the sound manager, save system, or scene manager?",
+        "answer": "Singleton"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "Which tank was most produced by the Americans during WW2",
+        "answer": "Sherman"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Which is the most produce tank in the world",
+        "answer": "T34"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "What is the largest organ in the human body",
+        "answer": "skin"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "What's the name of the process bt which cells divide to produce two identical daughter cells",
+        "answer": "mitosis"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Who performed in the 2025 Super Bowl the song “Not Like Us”?",
+        "answer": "Kendrick Lamar"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Which female singer is always accused of lying for no reason?",
+        "answer": "SZA"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "What is a relationship between classes called?",
+        "answer": "An association"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "Which Java functionality is used to “kill” an object?",
+        "answer": "garbage collector"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Which coutrny produced the first tank in history?",
+        "answer": "United Kingdom"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Which tank had the Belgian army until 2014?",
+        "answer": "Leopard 2"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "How many hearts do octopuses have?",
+        "answer": "3"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What is the name of the hormone that regulates metabolism and is produced by the thyroid gland?",
+        "answer": "Thyroxine"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "n films. What’s the number used by Flash McQueen in the Piston Cup?",
+        "answer": "95"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Which famous German composer wrote the soundtrack from the movie \"Crimson Tide\"?",
+        "answer": "Hans Zimmer"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "Which of these design patterns is not part of the structural patterns? Adapter, Proxy, Iterator",
+        "answer": "Iterator"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "Which method do you use when you want to create a clone of an object?",
+        "answer": "clone()"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "What is the name of the most viewed Latino song on YouTube?",
+        "answer": "Despacito"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "Who is the most streamed Latino artist?",
+        "answer": "Bad Bunny"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Which book inspired a movie starring a hunchback called Quasimodo?",
+        "answer": "Notre-Dame de Paris"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "What is the name of the Belgian detective created by the English novelist Agatha Christie?",
+        "answer": "Hercule Poirot"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Which famous rapper released the single “Hit Em Up” in 1996?",
+        "answer": "Tupac Shakur"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "In 2014, Ariana Grande released her title track “Love Me Harder”, which famous singer featured the song?",
+        "answer": "The Weeknd"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What is represented by a continuous line with a black diamond?",
+        "answer": "A composition"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "How should you name a method that return the value of the boolean “open”?",
+        "answer": "isOpen()"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "Who sang the song \"Waka Waka\"",
+        "answer": "Shakira"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Among those proposals, who featured in the Bad Bunny's song Party ? Ozuna, Rauw Alejandro, Daddy Yankee, Cris MJ",
+        "answer": "Rauw Alejandro"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "What is the name of the autho of the books \"The Three Musketeers\" and \"The Count of Monte Cristo\"?",
+        "answer": "Alexandre Dumas"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What's the full name of Sherlock Holmes' friend?",
+        "answer": "John Watson"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "In films. What's the name of the xaptain who's sent to save private Ryan?",
+        "answer": "John Miller"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Which famous actor portrayed the hero in \"Angels and Demons\"?",
+        "answer": "Tom Hanks"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "True or False: In a state machine diagram, can an object be in two different states?",
+        "answer": "False"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "In informatics. What dois OOP stand for?",
+        "answer": "Object Oriented Programming"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What keyword is used for inheritance in Java ?",
+        "answer": "Extends"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "What keyword is used to define a variable shared across all instances of a class ?",
+        "answer": "static"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Who is the lead singer of Evanescence ?",
+        "answer": "Amy Lee"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "What is the term for a game where players permanently lose progress upon dying ?",
+        "answer": "Permadeath"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "What animal's milk is blue ?",
+        "answer": "Seal"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "After the death, which part of the brain remains active the longest ?",
+        "answer": "The brainstem"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "What is the value of pi up to two decimal places ?",
+        "answer": "3.14"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Who wrote the novel 1984 ?",
+        "answer": "George Orwell"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "What color is obtained by mixing blue and yellow in paint ?",
+        "answer": "Green"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Why is the sky blue during the day?”",
+        "answer": "Atmosphere mainly diffuses blue light"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Which artist sang the song \"Thriller\", releaed in 1982 ?",
+        "answer": "Michael Jackson"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Which famous painter represented the goddess Venus in his painting \"The Birth of Venus,\" where she appears emerging from the sea?",
+        "answer": "Sandro Botticelli"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "What does the concept of \"method overloading\" mean in Java ?",
+        "answer": "Defining multiple methods with the same name but different parameters in the same class "
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "Which design pattern ensures that a class has only one instance and provides a global access point to that instance?",
+        "answer": "Singleton"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Who was the first president of the United States?",
+        "answer": "George Washington"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "Who proposed the first version of modern atomic theory in the early 19th century? ",
+        "answer": "John Dalton"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "What is the transition between states called ?",
+        "answer": "A transition"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "I'm something instantaneous that happens at a given moment and triggers a transition. What am I ?",
+        "answer": "An event"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "I'm used when you want an event to trigger a transition regardless of the current state of the machine. What am I ?",
+        "answer": "The Any Trigger"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "Which symbol indicates that you want to save the component of a state that was active, whatever the depth of the history ?",
+        "answer": "H*"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "What is the chemical formula for water ?",
+        "answer": "H2O"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "Which element is always present in an organic molecule ?",
+        "answer": "Carbon"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "What chemical bond usually links 2 atoms ?",
+        "answer": "Covalent bonds"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "What type of bond is broken when water boils ?",
+        "answer": "Hydrogen bonds"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "Who wrote The Lord of The Rings ?",
+        "answer": "J.R.R Tolkien or Tolkien"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "Who wrote the ‘A Game of Thrones’ saga ?",
+        "answer": "George R.R Martin or George Martin"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "Who wrote the Dune series recently adapted to cinema ?",
+        "answer": "Frank Herbert"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "Who is the famous author of the (hopefully) upcoming book ‘The winds of Winter’ ?",
+        "answer": "George R.R Martin or George Martin"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "What is the most famous alien from Hollywood ?",
+        "answer": "E.T."
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "What is the name of the area owned by the US Military that was long believed to hide aliens and alien spaceships ?",
+        "answer": "Area 51"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What is the name of the paradox that clashes the high likelihood of extra-terrestrial life and the lack of evidence of their existence ?",
+        "answer": "The Fermi paradox"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "On the Kardashev scale, what type of civilization is able to access all the energy available on their planet and should be able to control natural events (such as earthquakes) ?",
+        "answer": "A Type I civilization"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 1,
+        "question": "What is the object used to produce music called ?",
+        "answer": "An instrument"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 2,
+        "question": "What is the “big trumpet” mostly used during orchestras called ?",
+        "answer": "Tuba"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 3,
+        "question": "The Beatles were unable to do something important in music creation, what was it ?",
+        "answer": "Read Music Sheets/Write Music Sheets"
+    },
+    {
+        "theme": "ENTERTAINMENT",
+        "difficulty": 4,
+        "question": "What are two opposite types of music genre that tend to have the same fans psychologically speaking ?",
+        "answer": "Heavy metal and Classic music"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 1,
+        "question": "Who was the first president of America ?",
+        "answer": "George Washington"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 2,
+        "question": "In what year did the Titanic sink ?",
+        "answer": "1912"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 3,
+        "question": "Which well-known Russian figure survived an assassination attempt with poison, a shooting, but ultimately died from drowning, and has a famous song named after him ?",
+        "answer": "Rasputin"
+    },
+    {
+        "theme": "EDUCATION",
+        "difficulty": 4,
+        "question": "Which ancient queen, often portrayed as a great beauty and seductress, was not particularly stunning whatsoever ?",
+        "answer": "Cleopatra"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 1,
+        "question": "What is the name of the three-headed dog in Greek mythology that guards the gates of the underworld ?",
+        "answer": "Cerberus"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 2,
+        "question": "Who was the Greek goddess of wisdom, courage, and warfare ?",
+        "answer": "Athena"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 3,
+        "question": "What was the name of the Titan who held the sky on his shoulders ?",
+        "answer": "Atlas"
+    },
+    {
+        "theme": "IMPROBABLE",
+        "difficulty": 4,
+        "question": "Who was cursed to turn everything he touched into gold ?",
+        "answer": "King Midas"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 1,
+        "question": "In Java, what is the name of the class that usually launches the program (or sometimes tests the program) ?",
+        "answer": "The Main class"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 2,
+        "question": "In Java, what framework should I use to test the methods of my classes ?",
+        "answer": "Junit"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 3,
+        "question": "In Java, what is the value of the variable ‘a’ after these operations: ‘a = 2’ then ‘a += 4’ then ‘a /= 2’ ?",
+        "answer": "3"
+    },
+    {
+        "theme": "IT",
+        "difficulty": 4,
+        "question": "In Java, what design pattern should I use if I want only one instance of a given object at a time ?",
+        "answer": "The singleton pattern"
     }
 ]

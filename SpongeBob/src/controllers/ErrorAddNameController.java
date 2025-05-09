@@ -9,7 +9,7 @@ public class ErrorAddNameController {
     @FXML
     private void handleBackButton(MouseEvent event) {
         try {
-            SceneSwitcher.switchScene(event, "/view/ChooseName.fxml");
+            SceneSwitcher.switchScene(event, "/view/CreatedPlayer.fxml");
         } catch (Exception e) {
             System.err.println("Failed to return to ChooseName screen: " + e.getMessage());
             e.printStackTrace();

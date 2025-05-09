@@ -19,7 +19,7 @@
             <Font name="Krabby Patty" size="36.0" />
          </font>
       </Text>
-      <ImageView fitHeight="68.0" fitWidth="142.0" layoutX="14.0" layoutY="302.0" onMouseClicked="#BackHome" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="68.0" fitWidth="142.0" layoutX="14.0" layoutY="302.0" onMouseClicked="#handleBackButton" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../resource/image/back.png" />
          </image>

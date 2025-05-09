@@ -1,66 +1,41 @@
 package controllers;
 
-import java.io.IOException;
-
 import application.SceneSwitcher;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Modality;
-import javafx.stage.Stage;
 
 public class NumberOfPlayersController {
 
     @FXML
-    private ToggleGroup playerCount;
+    private ToggleGroup playerCount; // Groupe de boutons radio pour choisir le nombre de joueurs
 
     @FXML
-    private ImageView nextDisabledImage;
-
+    private ImageView nextDisabledImage; // Bouton "Next" désactivé
     @FXML
-    private ImageView nextEnabledImage;
-
-    @FXML
-    private void goToNameScreen(MouseEvent event) {
-        if (playerCount.getSelectedToggle() == null) {
-            try {
-                Parent confirmRoot = FXMLLoader.load(getClass().getResource("/view/Error_MakeAChoice.fxml"));
-                
-                Stage confirmStage = new Stage();
-                confirmStage.setScene(new Scene(confirmRoot));
-                
-                // Make the window modal
-                confirmStage.initModality(Modality.APPLICATION_MODAL);  // Important for modals
-                confirmStage.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        } else {
-            SceneSwitcher.switchScene(event, "/view/ChooseName.fxml");
-        }
-    }
-
-
-    @FXML
-    private void checkSelection() {
-        if (playerCount.getSelectedToggle() != null) {
-            nextDisabledImage.setVisible(false);
-            nextEnabledImage.setVisible(true);
-        } else {
-            nextDisabledImage.setVisible(true);
-            nextEnabledImage.setVisible(false);
-        }
-    }
+    private ImageView nextEnabledImage; // Bouton "Next" activé
 
     @FXML
     private void initialize() {
+        updateNextButtonState();
+        
+        // Ajout d'un écouteur pour réagir aux changements de sélection
         playerCount.selectedToggleProperty().addListener((observable, oldValue, newValue) -> {
-            checkSelection(); 
+            updateNextButtonState();
         });
+    }
+
+    @FXML
+    private void goToPlayersScreen(MouseEvent event) {
+        SceneSwitcher.switchScene(event, "/view/CreatedPlayer.fxml");
+    }
+
+    @FXML
+    private void updateNextButtonState() {
+        boolean selected = playerCount.getSelectedToggle() != null;
+        nextDisabledImage.setVisible(!selected);
+        nextEnabledImage.setVisible(selected);
     }
 
     @FXML
@@ -68,3 +43,4 @@ public class NumberOfPlayersController {
         SceneSwitcher.switchScene(event, "/view/Home.fxml");
     }
 }
+
